@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Room - NexSkillHub</title>
+    <meta
+      name="description"
+      content="NexSkillHub Reading Rooms: Quiet, inspiring, and technologically advanced study environment."
+    />
+    <link rel="icon" type="image/png" href="../../public/logo.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container nav-container">
+        <a href="../../index.html" class="logo">
+          <img src="../../public/logo.png" alt="NexSkillHub Logo" />
+        </a>
+
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">Home</a>
+            </li>
+
+            <!-- Courses Dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link"
+                >Courses <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown">
+                <div class="dropdown-grid">
+                  <!-- Application Stack -->
+                  <div class="dropdown-column">
+                    <h5>Application Stack</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="../../courses/java-training-certification/index.html"
+                          ><i class="fa-solid fa-angles-right"></i> Java</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../../courses/python-training-certification/index.html"
+                          ><i class="fa-solid fa-angles-right"></i> Python</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../../courses/react-js-training-certification/index.html"
+                          ><i class="fa-solid fa-angles-right"></i> React JS</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../../courses/ui-ux-design-training/index.html"
+                          ><i class="fa-solid fa-angles-right"></i> UI/UX
+                          Design</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../../courses/fullstack-java-training-certification/index.html"
+                          ><i class="fa-solid fa-angles-right"></i> FullStack
+                          Java</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../../courses/fullstack-mern-training-certification/index.html"
+                          ><i class="fa-solid fa-angles-right"></i> FullStack
+                          MERN</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../../courses/fullstack-python-training-certification/index.html"
+                          ><i class="fa-solid fa-angles-right"></i> FullStack
+                          Python</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Platform Stack -->
+                  <div class="dropdown-column">
+                    <h5>Platform Stack</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="../../courses/devops-training-certification/index.html"
+                          ><i class="fa-solid fa-angles-right"></i> DevOps</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-angles-right"></i> Azure
+                          DevOps</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-angles-right"></i> DevOps With
+                          AWS</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-angles-right"></i> Multi Cloud
+                          DevOps</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-angles-right"></i>
+                          ServiceNOW</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-angles-right"></i>
+                          Salesforce</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- AI Data Stack -->
+                  <div class="dropdown-column">
+                    <h5>AI Data Stack</h5>
+                    <ul>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-angles-right"></i> Power BI</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../../courses/data-science-training-certification/index.html"
+                          ><i class="fa-solid fa-angles-right"></i> Data
+                          Science</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-angles-right"></i> Data
+                          Analyst</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-angles-right"></i> Business
+                          Analyst</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-angles-right"></i> Azure Data
+                          Engineering</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-angles-right"></i> Artificial
+                          Intelligence (AI)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Programs Dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link"
+                >Programs <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown">
+                <ul class="dropdown-list">
+                  <li>
+                    <a href="../../programs/full-ai-stack-training/index.html"
+                      ><i class="fa-solid fa-angles-right"></i> Full AI Stack</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-angles-right"></i> Full Stack With
+                      AI</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-angles-right"></i> Data Analyst
+                      With AI</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-angles-right"></i> Platform Stack
+                      With AI</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-angles-right"></i> Multi-Cloud
+                      DevOps</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link"
+                >Services <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown">
+                <ul class="dropdown-list">
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-angles-right"></i> Class
+                      Training</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../services/online-training/index.html"
+                      ><i class="fa-solid fa-angles-right"></i> Online
+                      Training</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-angles-right"></i> Weekend
+                      Training</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../services/corporate-training/index.html"
+                      ><i class="fa-solid fa-angles-right"></i> Corporate
+                      Training</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-angles-right"></i> One-To-One
+                      Training</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Resources Dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link active"
+                >Resources <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown">
+                <ul class="dropdown-list">
+                  <li>
+                    <a href="../../blogs/latest-blogs/index.html"
+                      ><i class="fa-solid fa-angles-right"></i> Blogs</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../demos/free-demos/index.html"
+                      ><i class="fa-solid fa-angles-right"></i> Free Demos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../resources/events/index.html"
+                      ><i class="fa-solid fa-angles-right"></i> Events</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../resources/reading-room/index.html"
+                      ><i class="fa-solid fa-angles-right"></i> Reading Room</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Company Dropdown -->
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link"
+                >Company <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown">
+                <ul class="dropdown-list">
+                  <li>
+                    <a href="../../company/about-us/index.html"
+                      ><i class="fa-solid fa-angles-right"></i> About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../online-pay/index.html"
+                      ><i class="fa-solid fa-angles-right"></i> Online Pay</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-angles-right"></i> Careers</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-angles-right"></i> Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          
+          <div class="nav-close" id="nav-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </nav>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="section">
+        <div
+          class="container grid"
+          style="grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center"
+        >
+          <div class="relative">
+            <img
+              src="../../public/assets/Resources/banner1.jpg"
+              alt="Reading Room"
+              style="
+                border-radius: 12px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                width: 100%;
+              "
+            />
+            <div
+              style="
+                position: absolute;
+                bottom: -30px;
+                right: -30px;
+                background: linear-gradient(135deg, #8000bf, #a400d1);
+                color: white;
+                padding: 2rem;
+                border-radius: 12px;
+                text-align: center;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+              "
+            >
+              <h2 class="text-3xl font-bold">1500</h2>
+              <p>Total working space</p>
+            </div>
+          </div>
+
+          <div>
+            <h1 class="text-4xl font-bold mb-4">
+              India #1 Reading Rooms | Corporate Study Spaces
+            </h1>
+            <p class="text-gray-600 mb-6">
+              NexSkillHub’s Reading Rooms, your ultimate destination for a
+              quiet, inspiring, and technologically advanced study environment.
+              Strategically located in Hyderabad and Bangalore.
+            </p>
+            <a href="#" class="btn btn-primary">Find Your Space</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Amenities -->
+      <section class="section section-bg">
+        <div class="container">
+          <h2 class="section-title text-center" style="margin-bottom: 3rem">
+            Amenities
+          </h2>
+
+          <div
+            class="grid"
+            style="
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 2rem;
+            "
+          >
+            <div class="amenity-card">
+              <i class="fa-solid fa-headset"></i>
+              <p>IT Support</p>
+            </div>
+            <div class="amenity-card">
+              <i class="fa-solid fa-wifi"></i>
+              <p>High Speed Internet</p>
+            </div>
+            <div class="amenity-card">
+              <i class="fa-solid fa-clock"></i>
+              <p>24X7, 365 Days</p>
+            </div>
+            <div class="amenity-card">
+              <i class="fa-solid fa-bolt"></i>
+              <p>Power Backup</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="../../index.html" class="footer__logo">
+            <img
+              src="../../public/logo.png"
+              alt="NexSkillHub"
+              style="height: 40px"
+            />
+          </a>
+          <p class="footer__description">
+            Empowering careers through technology. <br />
+            Your future starts here.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="footer__social-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="footer__social-link"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="footer__social-link"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Company</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="../../company/about-us/index.html" class="footer__link"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="../../online-pay/index.html" class="footer__link"
+                >Online Pay</a
+              >
+            </li>
+            <li><a href="#" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Resources</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="../../blogs/latest-blogs/index.html" class="footer__link"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="../../resources/events/index.html" class="footer__link"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a href="../../privacy-policy/index.html" class="footer__link"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Contact</h3>
+          <ul class="footer__info">
+            <li><i class="fa-solid fa-location-dot"></i> Hyderabad, India</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@nexskillhub.com</li>
+            <li><i class="fa-solid fa-phone"></i> +91 6304982304</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copy container">
+        &#169; 2024 NexSkillHub. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>
