@@ -1,0 +1,251 @@
+/* ==================== PATCH CSS (v2) ==================== */
+
+/* 1. Missing Variables */
+:root {
+  --primary-gradient: linear-gradient(90deg, #0ea5e9 0%, #2563eb 100%);
+  --z-fixed: 100;
+  --header-height: 3.5rem;
+  --title-color: #0f172a;
+}
+
+/* 2. Tools Grid */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.tool-item:hover {
+  transform: translateY(-5px);
+}
+
+.tool-icon {
+  width: 50px; /* Slightly smaller for better fit */
+  height: 50px;
+  object-fit: contain;
+}
+
+.tool-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* 3. Career Path */
+.career-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.career-tab {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #334155;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.career-tab:hover,
+.career-tab.active {
+  background: #0284c7;
+  color: white;
+  border-color: #0284c7;
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.career-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f1f5f9;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure the inline style for the 4th card works by providing the variable */
+.career-card h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.career-card p {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* 4. Batch Schedule */
+.batch-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.batch-card {
+  width: 100%;
+  max-width: 350px;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 5. Curriculum List */
+.curriculum-list {
+  padding: 1rem 0 1rem 1rem;
+  list-style: none;
+}
+
+.curriculum-list li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 2rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.curriculum-list li::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #0284c7;
+  font-size: 1.1rem;
+  top: 2px;
+}
+
+/* 6. MOBILE HEADER & NAVIGATION FIXES */
+@media screen and (max-width: 968px) {
+  /* Override default Top-Down menu with Right-Sidebar for better UX */
+  .nav-menu {
+    position: fixed !important;
+    top: 0 !important;
+    right: -100% !important; /* Hidden */
+    left: auto !important;
+    bottom: 0 !important;
+    width: 85% !important;
+    max-width: 300px !important;
+    height: 100vh !important;
+    background-color: white !important;
+    padding: 6rem 1.5rem 2rem !important; /* Space for close button */
+    box-shadow: -4px 0 16px rgba(0, 0, 0, 0.15) !important;
+    transition: right 0.4s ease !important;
+    z-index: 1000 !important; /* Above everything */
+    overflow-y: auto !important;
+    display: block !important;
+  }
+
+  .nav-menu.show-menu {
+    right: 0 !important; /* Visible */
+    top: 0 !important;
+  }
+
+  /* Ensure Close Button is visible */
+  .nav-close {
+    display: flex !important;
+    position: absolute !important;
+    top: 1.5rem !important;
+    right: 1.5rem !important;
+    font-size: 1.8rem !important;
+    color: #0f172a !important; /* Dark color */
+    z-index: 1001 !important;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #f1f5f9;
+    border-radius: 50%;
+  }
+
+  .nav-list {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    gap: 0 !important;
+  }
+
+  .nav-item {
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .nav-link {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 !important;
+    font-size: 1rem !important;
+    color: #334155 !important;
+    width: 100% !important;
+  }
+
+  /* Improve Dropdown in Mobile */
+  .dropdown {
+    position: static !important;
+    box-shadow: none !important;
+    background: #f8fafc !important; /* Slightly distinct bg */
+    border-radius: 8px;
+    margin-bottom: 1rem !important;
+    display: none; /* JS or CSS hover triggers */
+    padding: 0.5rem 1rem !important;
+    border: none !important;
+  }
+
+  /* Ensure dropdown opens on hover/focus - basic CSS fallback */
+  .has-dropdown:hover .dropdown,
+  .has-dropdown:focus-within .dropdown {
+    display: block !important;
+  }
+
+  .dropdown-column h5 {
+    display: none; /* Simplify mobile view */
+  }
+
+  .dropdown-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dropdown-column {
+    margin-bottom: 1rem;
+  }
+
+  .dropdown i {
+    display: none; /* Remove arrows in dropdown items for cleaner look */
+  }
+}
